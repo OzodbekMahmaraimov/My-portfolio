@@ -1,0 +1,447 @@
+body {
+    font-family: sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* height: 7000px; */
+    background-color: #000 !important;
+}
+
+/* navbar qismi */
+
+.dropdown-content {
+    top: 100px;
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 100%;
+    transform: translate(0px, -28px);
+}
+
+.main-header {
+    position: fixed;
+    background-color: #191C24;
+    width: 100%;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container_2 {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main_header_brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main_header_brand a {
+    position: relative;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    left: -8.5rem;
+}
+
+.main_navigation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.main-navigation_item {
+    position: relative;
+    display: inline-block;
+    left: 22rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+}
+
+.main-navigation_item_a {
+    color: #6C7293;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.main-navigation_item_a:hover {
+    color: red;
+}
+
+.main-navigation_item_a.active a {
+    color: red;
+}
+
+.custom-btn {
+    background-color: red;
+    border: none;
+    padding: 10px 50px;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: rgb(132, 18, 18);
+}
+
+.fa-solid {
+    padding: 1rem;
+}
+
+/* / navbar qismi */
+
+/* carousel qismi */
+
+.carousel-item {
+    height: 26rem;
+}
+
+.carousel-caption {
+    vertical-align: middle;
+    margin-bottom: 6rem;
+}
+
+.carousel-rasm {
+    position: relative;
+    top: -180px;
+    filter: brightness(0.15);
+}
+
+.about {
+    font-size: 4.2rem;
+    letter-spacing: -3px;
+}
+
+.joylashuv {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/* / carousel qismi */
+
+/* Men haqimda qismi */
+
+.bu_row {
+    position: relative;
+    top: 5.3rem;
+    left: -3%;
+}
+
+.haqida {
+    width: 100px;
+    height: 30px;
+    background-color: #191C24;
+    margin-bottom: 20px;
+}
+
+.col {
+    color: white;
+}
+
+.col_2 {
+    position: relative;
+    left: 25px;
+}
+
+.col_2 h1 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.col_4 p {
+    padding-bottom: 50px;
+}
+
+.rasm {
+    width: 28rem;
+    margin-left: 13rem;
+}
+
+.container_5 {
+    position: relative;
+    display: inline-block;
+    top: 29rem;
+    left: 9%;
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding: 40px;
+    padding-right: 65px;
+    background-color: #191C24;
+    color: white;
+}
+
+.container_5 h1 {
+    line-height: 1.5;
+}
+
+p {
+    color: #6C7293;
+}
+
+/* / Men haqimda qismi */
+
+/* Sartaroshlar   */
+
+.barber_1 {
+    width: 130px;
+    height: 30px;
+    padding: 3px;
+    padding-left: 25px;
+    color: #EB1616;
+    background-color: #191C24;
+}
+
+
+.barber_1_style {
+    position: relative;
+    top: 800px;
+    left: 47%;
+}
+
+.text_2 {
+    position: relative;
+    top: 50rem;
+    text-align: center;
+    color: white;
+}
+
+.katta_quti {
+    position: relative;
+    top: 53rem;
+}
+
+.quti-rasm {
+    position: relative;
+    top: -360px;
+
+}
+
+.quti-rasm img {
+    width: 300px;
+}
+
+.align {
+    position: relative;
+    left: 0.65rem;
+    width: 101%;
+    height: 6rem;
+    text-align: center;
+    background-color: #191C24;
+}
+
+
+
+.barber_name {
+    position: relative;
+    top: 20px;
+}
+
+.design {
+    position: relative;
+    top: 10px;
+    color: red;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    background-color: #df0c0c;
+    border-radius: 0;
+    padding: .8rem .8rem;
+    border: none;
+    cursor: pointer;
+    transition: all opacity 10s visibility 10s;
+    z-index: 50;
+}
+
+#backToTopBtn.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTopBtn.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.anim-button {
+    padding: .8rem 2rem;
+    top: 360px;
+    height: 360px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 1s, box-shadow 1s, transform 1s;
+    overflow: hidden;
+    position: relative;
+}
+
+.anim-button::before,
+.anim-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007c;
+    transition: transform 1s;
+    z-index: -1;
+}
+
+.anim-button::before {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.anim-button::after {
+    top: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.anim-button:hover::before,
+.anim-button:focus::before,
+.anim-button:active::before {
+    transform: scaleX(1);
+}
+
+.anim-button:hover::after,
+.anim-button:focus::after,
+.anim-button:active::after {
+    transform: scaleX(1);
+}
+
+.anim-button:hover {
+    background-color: #0000007c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+    .icon {
+        opacity: 100%;
+    }
+}
+
+.team-img {
+    position: relative;
+
+}
+
+.icon {
+    color: #df0c0c;
+    margin-top: 6rem;
+    opacity: 0;
+    transition: 1s;
+}
+
+.center {
+    margin-top: -40rem;
+}
+
+/* Sartaroshlar   */
+
+/* eng pastki qismi */
+
+.yakun {
+    position: relative;
+    top: 5rem;
+    left: 1.8rem;
+}
+
+.block a {
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #6C7293;
+}
+
+.yakun a:hover {
+    color: #df0c0c;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+.future {
+    margin-top: 35rem;
+    margin-left: -10rem;
+    background-color: #191C24;
+    width: 97.8rem;
+    height: 23rem;
+}
+
+.rang_1 {
+    color: #6C7293;
+}
+
+.h4-qalin {
+    font-weight: bold;
+}
+
+.birinchi_input {
+    padding: 13px;
+}
+
+.ikkinchi_input {
+    padding: 13px;
+    transform: rotate(0deg);
+}
+
+.uchinchi_input {
+    padding: 13px;
+}
+
+.tugma {
+    border-style: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 5rem;
+}
+
+.manzil {
+    color: #df0c0c;
+    width: 45px;
+    height: 45px;
+    background-color: #000;
+    padding: 0.9rem;
+    margin-left: 20px;
+}
+
+.fa {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.futer {
+    margin-top: -20rem;
+}
+
+/* / eng pastki qismi */

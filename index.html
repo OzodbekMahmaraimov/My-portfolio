@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon"
+        href="img/teamwork-group-working-together-icon-teamwork-group-working-together-icon-vector-design-119053852.jpg">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- offcanvas  -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="color-range"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-uppercase offcanvas-color" id="offcanvasWithBothOptionsLabel">choose a color
+            </h5>
+            <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h4 class="offcanvas-color">Home</h4>
+            <input id="color-home" class="form-control mb-4" type="color">
+            <h4 class="offcanvas-color">About</h4>
+            <input id="color-about" class="form-control mb-3" type="color">
+            <h4 class="offcanvas-color">My project</h4>
+            <input id="color-project" class="form-control mb-3" type="color">
+            <h4 class="offcanvas-color">Portfolio</h4>
+            <input id="color-portfolio" class="form-control mb-3" type="color">
+            <h4 class="offcanvas-color">Contact</h4>
+            <input id="color-contact" class="form-control mb-3" type="color">
+        </div>
+        <button class="btn btn-primary w-75 mb-5 ms-5" onclick="clearAll()">Clear</button>
+    </div>
+    <!-- /offcanvas -->
+
+    <!-- navbar  -->
+
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 256 256">
+            <g transform="rotate(90 128 128)">
+                <path fill="white"
+                    d="M228 128a12 12 0 0 1-12 12H69l51.52 51.51a12 12 0 0 1-17 17l-72-72a12 12 0 0 1 0-17l72-72a12 12 0 0 1 17 17L69 116h147a12 12 0 0 1 12 12Z" />
+            </g>
+        </svg>
+    </button>
+
+    <header>
+        <div class="logo">Together</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#project">My project</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <button class="btn btn-danger mt-lg-2 ms-lg-4" data-bs-toggle="offcanvas"
+                        data-bs-target="#color-range" aria-controls="color-range">Color</button>
+                </li>
+                <li class="ms-lg-4 mt-lg-2">
+                    <select class="form-select bg-warning border-primary text-light"
+                        aria-label="Default select example">
+                        <option selected>ENG</option>
+                        <option value="1">UZB</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- / navbar  -->
+
+    <!-- home page  -->
+    <div class="conatainer one-page">
+        <div class="row home-row mt-5">
+            <div class="col-md-6 col-12 home_rasm-col">
+                <img class="img-fluid img-fluid1" src="img/me.jpg" alt="...">
+            </div>
+            <div class="col-md-6 col-12 home-text">
+                <h1 class="one-page-text1 texts"><span class="salom">Hello I'm</span> <br> <span
+                        class="name">Ozodbek</span> <br> <span class="name">Mahmaraimov</span> <br> <span
+                        class="work">Frontend</span> <span class="work text-chiziq">Developer</span></h1>
+                <div class="tugma">
+                    <a class="btn-resume" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- / home page  -->
+
+    <!-- about  -->
+    <div class="manzil-about" id="about"></div>
+    <div class="about-container pt-3 pb-5">
+        <div class="container">
+            <div class="chiziq_2"></div>
+            <div class="about-text-container">
+                <!-- <h2 class="text-light"><span class="text-uppercase fs-5 about-text pb-5">about</span><br><span
+                    class="more-about-text">LEARN MORE ABOUT ME</span></h2> -->
+                <h2 class="text-light"><span class="text-uppercase fs-5 about-text pb-5"
+                        style="color: #aaaaaa;">about</span><br><span class="more-about-text">LEARN MORE ABOUT ME</span>
+                </h2>
+            </div>
+            <div class="row">
+
+                <!-- image part -->
+                <div class="col-md-4">
+                    <img class="img-fluid about-image" src="img/about.jpg" alt="...">
+                    <img class="img-fluid mt-5 about-image about-image2" src="img/website 1.jpg" alt="...">
+                </div>
+                <!-- / image part -->
+
+                <!-- text part  -->
+                <div class="col-md-8">
+                    <h3 class="about-work-text ps-3">Frontend Developer</h3>
+                    <p class="text-italic text-light ps-3">I am currently studying at the IT city academy training
+                        center. I see my future here. The secret of success is simple - work and work.</p>
+                    <!-- personal information -->
+                    <div class="row">
+                        <!-- one personal information -->
+                        <div class="col-lg-6 text-light">
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Birthday: </strong> <span>4 october 2007</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Website: </strong> <span>www.ozodbekportfolio.com</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Phone: </strong> <span>+998 97 801 81 77</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>City: </strong> <span>Karshi, Uzbekistan</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- / one personal information -->
+
+                        <!-- two personal information -->
+                        <div class="col-lg-6 text-light">
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Age: </strong> <span>16</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Degree: </strong> <span>student</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>Email: </strong> <span>ozodbekmahm...07@gmail.com</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="green"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                    <strong>City: </strong> <span>Karshi, Uzbekistan</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- / two personal information -->
+                    </div>
+                    <!-- / personal information -->
+                    <p class="ps-3 pt-3 text-light">I am very curious. I don't like to waste my time because time is
+                        very precious to me. I want to study without sleeping at night, but I have to sleep. I enjoy
+                        overcoming challenges and solving problems. I'm not the person you think I am</p>
+                </div>
+
+                <!-- / text part  -->
+            </div>
+
+            <section class="skill">
+                <div class="skill-title">
+                    <div class="chiziq_3 mt-5"></div>
+                    <h2 class="text-uppercase skill-text">skill</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <span class="text-light">HTML</span><span class="text-light float-end">90%</span>
+                        <div class="progress mt-2 rounded-0" role="progressbar" aria-label="Basic example"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 15px;">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 skill-col">
+                        <span class="text-light">BOOTSTRAP</span> <span class="text-light float-end">75%</span>
+                        <div class="progress mt-2 rounded-0" role="progressbar" aria-label="Basic example"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 15px;">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <span class="text-light">CSS</span><span class="text-light float-end">75%</span>
+                        <div class="progress mt-2 rounded-0" role="progressbar" aria-label="Basic example"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 15px;">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 skill-col">
+                        <span class="text-light">JAVASCRIPT</span><span class="text-light float-end">50%</span>
+                        <div class="progress mt-2 rounded-0" role="progressbar" aria-label="Example 20px high"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 15px;">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- / about  -->
+
+    <!-- my project  -->
+    <div class="manzil-project" id="project"></div>
+    <div class="my-project-container">
+        <div class="container">
+            <div class="chiziq_1"></div>
+            <div class="project-text">
+                <h2 class="my-project-text1"><span class="my-projecty-text">My project</span><br><span
+                        class="text-uppercase pt-5 fs-5" style="color: #aaaaaa;">project</span></h2>
+                <h2 class="my-project-text2"><span class="text-uppercase pt-5 fs-5"
+                        style="color: #aaaaaa;">project</span><br><span class="my-projecty-text">My project</span></h2>
+            </div>
+            <div class="row pb-5">
+                <div class="col-md-4 mt-5 project-col" data-aos="flip-right">
+                    <div class="card">
+                        <div class="project-img-div">
+                            <img src="img/Skrinshot 2023-12-15 095301.png" class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">About a work</h5>
+                            <p class="card-text">this project was given to us as homework from figma. Here is written
+                                about their work</p>
+                            <a target="_blank" href="https://onlinecalculatordesign.netlify.app/" class="btn"><span>Go
+                                    project</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 project-col" data-aos="flip-up">
+                    <div class="card">
+                        <div class="project-img-div">
+                            <img src="img/project two.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Employees</h5>
+                            <p class="card-text">This project contains information about the company's employees and
+                                information about themselves</p>
+                            <a target="_blank" href="vazifa_3/bajaraman.html" class="btn"><span>Go project</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 project-col" data-aos="flip-right">
+                    <div class="card">
+                        <div class="project-img-div">
+                            <img src="img/project three.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Haircut</h5>
+                            <p class="card-text">this project is related to barbers salon. about the conveniences of the
+                                barbershop.</p>
+                            <a target="_blank" href="vazifa_5/index.html" class="btn"><span>Go project</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- / my project  -->
+
+    <!-- portfolio  -->
+    <div class="manzil-portfolio" id="portfolio"></div>
+    <div class="portfolio">
+        <div class="container">
+            <div class="portfolioContainer">
+                <div class="title">
+                    <!-- <div class="chiziq_4"></div> -->
+                    <!-- <span class="portfolio-text">Portfolio</span> -->
+                    <h1 class="text-center text-light">My Portfolio</h1>
+                </div>
+                <main class="mainContainer">
+                    <section class="btns">
+                        <ul>
+                            <li class="btn active text-light" data-filter="all">All work</li>
+                            <li class="btn text-light" data-filter="design">Design</li>
+                            <li class="btn text-light" data-filter="development">Development</li>
+                            <li class="btn text-light" data-filter="logo">Logo</li>
+
+                        </ul>
+                    </section>
+
+                    <section class="gallery">
+                        <div class="card" data-item="development">
+                            <div class="imgBox">
+                                <img src="img/design 1.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Websie 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="design">
+                            <div class="imgBox">
+                                <img src="img/design 2.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Design 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="design">
+                            <div class="imgBox">
+                                <img src="img/design 3.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Design 2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="logo">
+                            <div class="imgBox">
+                                <img src="img/website 1.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Logo 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="development">
+                            <div class="imgBox">
+                                <img src="img/website 2.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Websie 2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="design">
+                            <div class="imgBox">
+                                <img src="img/website 3.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Design 3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="logo">
+                            <div class="imgBox">
+                                <img src="img/logo 1.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Logo 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="development">
+                            <div class="imgBox">
+                                <img src="img/logo 2.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Websie 3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-item="logo">
+                            <div class="imgBox">
+                                <img src="img/logo 3.jpg" alt="...">
+                            </div>
+                            <div class="imgText">
+                                <h2>Logo 3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- / portfolio  -->
+
+    <!-- contact us  -->
+    <div class="manzil-contact" id="contact"></div>
+    <div class="contact-body pb-5">
+        <section>
+            <div class="contact-title">
+                <h2 class="text-center text-uppercase pt-5 mb-5">Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="form-container">
+                    <h3>Messsage Us</h3>
+                    <form action="" class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="email" name="" id="" placeholder="Enter Your Email..." required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."
+                            required></textarea>
+                        <input type="submit" value="Send" class="send-button">
+                    </form>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.881336496507!2d65.77239627597092!3d38.83517837173743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ea9ac56d47761%3A0x9333310b977c064!2sIT%20Techno%20Park!5e0!3m2!1sen!2s!4v1699855760803!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- / contact us  -->
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="qator">
+            <div class="qator-col">
+                <img src="img/together.png" alt="..." class="logo">
+                <p>Together we must create great companies. We need to introduce Uzbekistan to the world! We need to
+                    lift the population out of poverty</p>
+            </div>
+            <div class="qator-col">
+                <h3>Academy<div class="underline"><span></span></div>
+                </h3>
+                <p>IT city academy</p>
+                <p>Karshi city</p>
+                <p>next to Davalat xizmatlari markazi</p>
+                <p class="email-id">Itcityacademy@gmail.com</p>
+                <h4>+998 - 978018177</h4>
+            </div>
+            <div class="qator-col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#project">My project</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="qator-col">
+                <h3>Newsletter <div class="underline"><span></span></div>
+                </h3>
+                <form class="footer-form">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" class="bi bi-envelope"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <input class="footer-input" type="email" placeholder="Enter Your Email id" required>
+                    <button class="footer-btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="#ccc" class="bi bi-arrow-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-telegram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- / footer  -->
+
+    <script src="js/script.js"></script>
+    <script src="js/sinov.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

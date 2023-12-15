@@ -1,0 +1,572 @@
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    height: 4100px;
+}
+/* birinchi oyna */
+.container {
+    width: 1140;
+    margin: 0 auto;
+}
+
+.main_header_brand img {
+    position: relative;
+    width: 150px;
+}
+
+.main_header_brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main_header_brand a {
+    position: relative;
+    top: 63px;
+    left: 180px;
+}
+
+.main_navigation {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: 56px;
+    left: 376px;
+}
+
+.main-navigation_item   {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-navigation_item a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-navigation_item a:hover {
+    color: #efb6df;
+}
+
+.one_button {
+    position: relative;
+    width: 190px;
+    height: 45px;
+    top: -12px;
+    left: 1400px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #1F64FF;
+    color: #1F64FF;
+    cursor: pointer;
+}
+
+.two_button {
+    position: relative;
+    width: 190px;
+    height: 45px;
+    top: -12px;
+    left: 1410px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #1F64FF;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+.rasm {
+    position: relative;
+    left: 900px;
+    bottom: 250px;
+}
+
+.rasm img {
+    width: 930px;
+} 
+
+.yozuvlar {
+    position: relative;
+    left: 180px;
+    top: 300px;
+}
+
+.yozuvlar h1 {
+    font-size: 48px;
+    font-weight: inherit;
+}
+
+.yozuvlar h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.yozuvlar p {
+    font-size: 18px;
+}
+
+.tugma_1 {
+    width: 200px;
+    height: 52px;
+    background-color: #1F64FF;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tugma_2 {
+    width: 200px;
+    height: 52px;
+    background-color: #ffffff;
+    border-style: none;
+    border: 1px solid #1F64FF;
+    border-radius: 10px;
+    color: #1F64FF;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+/* / Birinchi oyna */
+/* Ikkinchi oyna */
+.center_yozuv {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 500px;
+}
+.chiziq {
+    position: relative;
+    width: 100px;
+    height: 7px;
+    background-color: blue;
+    left: 880px;
+    bottom: 450px;
+    border-radius: 3px;
+}
+
+.box1 {
+    display: inline-block;
+    position: relative;
+    bottom: 330px;
+    left: 130px;
+    height: 219px;
+}
+.box1 h1 {
+    display: block;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.box1 p {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.box1 img {
+    position: relative;
+    left: 125px;
+    width: 80px;
+    height: 80px;
+}
+/* yangi */
+.box2 {
+    display: inline-block;
+    position: relative;
+    bottom: 330px;
+    left: 400px;
+    height: 219px;
+}
+.box2 h1 {
+    display: block;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.box2 p {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: -77px;
+}
+.box2 img {
+    position: relative;
+    left: 125px;
+    width: 80px;
+    height: 80px;
+}
+ /* yangi */
+.box3 {
+    display: inline-block;
+    position: relative;
+    bottom: 330px;
+    left: 650px;
+    height: 219px;
+}
+.box3 h1 {
+    display: block;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.box3 p {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: -48px;
+}
+.box3 img {
+    position: relative;
+    left: 125px;
+    width: 80px;
+    height: 80px;
+}
+
+/* /ikkinchin oyna */
+
+.center2_yozuv {
+    text-align: center;
+    font-size: 40px;
+}
+.chiziq2 {
+    position: relative;
+    width: 100px;
+    height: 7px;
+    background-color: blue;
+    left: 880px;
+    border-radius: 3px;
+}
+.matn p {
+    position: relative;
+    top: 30px;
+    text-align: center; 
+    opacity: 0.7;
+    font-size: 25px;
+}
+#orasidagi {
+    font-weight: bold;
+}
+.katta_rasm {
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+.katta_rasm img {
+    width: 1500px;
+}
+.matn2 p{
+    position: relative;
+    text-align: center;
+    top: 100px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+#orasidagi2 {
+    font-weight: bold;
+}
+.button2 {
+    position: relative;
+    top: 150px;
+    left: 810px;
+    width: 295px;
+    height: 70px;
+    color: white;
+    background-color: #1F64FF;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.button2:hover {
+    background-color: brown;
+    font-size: 23px;
+}
+.center3_yozuv {
+    position: relative;
+    text-align: center;
+    font-size: 38px;
+    top: 350px;
+}
+.chiziq3 {
+    position: relative;
+    width: 100px;
+    height: 7px;
+    background-color: blue;
+    left: 885px;
+    border-radius: 3px;
+    top: 350px;
+}
+.matn3 {
+    position: relative;
+    text-align: center;
+    top: 400px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+#orasidagi3 {
+    font-weight: bold;
+}
+.quti1 img {
+    position: relative;
+    left: 260px;
+    top: 400px;
+    width: 1000px;
+}
+.big_live {
+    position: relative;
+    bottom: 200px;
+}
+@media only screen and (max-width:1550px) {
+    .logo {
+        position: relative;
+        bottom: 33px;
+        right: 80px;
+    }
+    .main_header_brand a img{
+        width: 100px;
+    }
+    
+    .main-navigation_item {
+        bottom: 30px;
+        right: 140px;
+    }
+    .main-navigation_item a {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .one_button {
+        left: 1150px;
+        width: 120px;
+        top: -45px;
+    }
+    .two_button {
+        left: 1155px;
+        width: 120px;
+        top: -45px;
+    }
+    
+    .yozuvlar h1 {
+        position: absolute;
+        top: -210px;
+    }
+    .yozuvlar h2 {
+        position: absolute;
+        top: -130px;
+    }
+    .rasm img {
+        position: relative;
+        top: 120px;
+        right: 170px;
+        width: 702px;
+        height: 484px;
+    }
+    .center_yozuv h1 {
+        position: relative;
+        font-size: 48px;
+        font-weight: 900;
+    }
+    .chiziq{
+        position: relative;
+        width: 49px;
+        height: 7px;
+        background-color: blue;
+        left: 717px;
+        bottom: 470px;
+        border-radius: 3px;
+    }
+    .box1 {
+        position: relative;
+        width: 290px;
+        height: 219px;
+        left: 130px;
+    }
+    .box1 h1 {
+        display: block;
+        font-size: 24px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .box1 p {
+        position: relative;
+        font-family: sans-serif;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .box1 img {
+        position: relative;
+        left: 125px;
+        width: 52px;
+        height: 52px;
+    }
+    .box2 {
+        width: 383px;
+        height: 223px;
+        left: 790px;
+        bottom: 350px;
+    }
+    .box2 h1 {
+        position: relative;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .box2 p {
+        position: relative;
+        font-size: 18px;
+    }
+    .box2 img {
+        position: relative;
+        width: 52px;
+        height: 52px;
+    }
+    .box3 {
+        position: relative;
+        left: -100px;
+        bottom: 355px;
+    }
+    .box3 img {
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        top: -50px;
+    }
+    .box3 p {
+        font-size: 18px;
+    }
+    .box3 h1 {
+        font-size: 24px;
+    }
+    .Quti_div {
+        position: relative;
+        top: -60px;
+    }
+    .center2_yozuv {
+        position: relative;
+        font-size: 30px;
+        font-weight: 900;
+        bottom: 300px;
+    }
+    .chiziq2 {
+        left: 698px;
+        bottom: 280px;
+    }
+    .matn {
+        position: relative;
+        bottom: 250px;
+        width: 90%;
+        height: 54px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        left: 100px;
+    }
+    .katta_rasm img {
+        position: relative;
+        width: 1100px;
+        height: 369px;
+        bottom: 150px;
+    }
+    .matn2 {
+        position: relative;
+        bottom: 160px;
+    }
+    .button2 {
+        position: relative;
+        left: 600px;
+        top: -30px;
+    }
+    .button2:hover {
+        background-color: brown;
+        font-size: 23px;
+    }
+    .center3_yozuv {
+        font-size: 30px;
+    }
+    .chiziq3 {
+        left: 710px;
+    }
+    .one_bosqich {
+        position: absolute;
+        width: 230px;
+        height: 60px;
+        top: 1005px;
+        left: 308px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #1F64FF;
+        border-style: none;
+        color: white;
+        font-size: 14px;
+    }
+    .one_bosqich:hover {
+        background-color: red;
+        font-size: 17px;
+    }
+    .two_bosqich {
+        position: absolute;
+        width: 230px;
+        height: 60px;
+        top: 1005px;
+        left: 995px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #1F64FF;
+        border-style: none;
+        color: white;
+        font-size: 14px;
+    }
+    .two_bosqich:hover {
+        background-color: red;
+        font-size: 17px;
+    }
+    .big_div2 {
+        position: relative;
+        top: 250px;
+        width: 100%;
+        height: 422px;
+        background-color: #F5F6FA;
+    }
+    .big_div2 img {
+        position: absolute;
+        left: 860px;
+    }
+    .yozuv_button {
+        position: absolute;
+        left: 150px;
+    }
+    .yozuv_button h1 {
+        font-size: 48px;
+    }
+    .yozuv_button button {
+        position: absolute;
+        top: 250px;
+        width: 200px;
+        height: 52px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: #1F64FF;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .yozuv_button button:hover {
+        background-color: red;
+        font-size: 17px;
+    }
+}
+.ozod:active{
+    margin-top: 15px;
+    border-bottom: 4px solid blue;
+}

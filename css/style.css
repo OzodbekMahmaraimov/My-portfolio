@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* all style  */
+* {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fefefe;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    background-color: #df0c0c;
+    border-radius: 0;
+    padding: .8rem .8rem;
+    border: none;
+    cursor: pointer;
+    transition: all opacity 10s visibility 10s;
+    z-index: 50;
+}
+
+#backToTopBtn.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTopBtn.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* / all style  */
+
+/* navbar  */
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+}
+
+/* navbar  */
+
+/* home  */
+.one-page {
+    background-color: #003049;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.phone-home {
+    display: none;
+}
+
+.home_rasm-col {
+    display: flex;
+    justify-content: center;
+}
+
+.texts {
+    padding-top: 2rem;
+    color: white;
+}
+
+.name {
+    font-size: 7rem;
+    color: #06d6a0;
+}
+
+.work {
+    font-size: 3rem;
+    color: #9d4edd;
+}
+
+.text-chiziq {
+    padding-bottom: 1rem;
+    text-decoration: underline;
+    color: #f85e00;
+}
+
+.salom {
+    color: #4cc9f0;
+}
+
+.btn-resume {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-resume:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.btn-resume span {
+    position: absolute;
+    display: block;
+}
+
+.btn-resume span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.btn-resume:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.btn-resume span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.btn-resume:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.btn-resume span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.btn-resume:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn-resume span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.btn-resume:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.offcanvas {
+    background-color: #003049;
+}
+
+.offcanvas-color {
+    color: #f2f2f2;
+}
+
+
+/* / home  */
+
+/* my project  */
+
+.manzil-project {
+    position: relative;
+    top: -3rem;
+}
+
+.my-project-container {
+    background: linear-gradient(45deg, #08001f, #30197d);
+}
+
+.my-project-container .card {
+    background-color: #003566;
+    width: 20rem;
+    color: white;
+    box-shadow: 10px 10px 5px #0f4c5c;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.my-project-container .card:hover {
+    background-color: #5a189a;
+    box-shadow: 10px 10px 5px #72ddf7;
+}
+
+.project-img-div {
+    overflow: hidden;
+}
+
+.my-project-container .card img {
+    transition: all 0.5s;
+}
+
+.my-project-container .card img:hover {
+    transform: scale(1.1);
+}
+
+.card .btn {
+    padding: 0.7rem 1.5rem;
+    color: white;
+    background-color: #003566 !important;
+    border: 1px solid yellow;
+    transition: all 0.4s;
+}
+
+.card .btn:hover {
+    background-color: yellow !important;
+}
+
+.my-project-text1 {
+    display: none;
+}
+
+.project-col {
+    transition: all 2s;
+}
+
+.project-text h2 {
+    color: white;
+    font-size: 3rem;
+    padding: 0 1.8rem;
+    text-transform: uppercase;
+}
+
+.chiziq_1 {
+    position: relative;
+    left: 8rem;
+    top: 3rem;
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: red;
+}
+
+.my-project-container .card .card-title {
+    font-size: 1.7rem;
+}
+
+.my-project-container .card .card-text {
+    font-size: 1rem;
+}
+
+.my-project-container .card .btn {
+    background-color: #ffc300;
+}
+
+.btn .my-project-container .card img {
+    width: 20rem;
+    padding: 1rem 1.7rem;
+}
+
+/* / my project  */
+
+/* about  */
+
+.about-container {
+    background-color: #040404;
+}
+
+.about-container .container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.chiziq_2 {
+    position: relative;
+    left: 8rem;
+    top: 3rem;
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: red;
+}
+
+.about-image2 {
+    display: none;
+}
+
+.about-text-container h2 {
+    color: white;
+    font-size: 3rem;
+    padding: 0 1.8rem;
+    text-transform: uppercase;
+}
+
+.about-work-text {
+    font-weight: 600;
+    font-size: 32px;
+    color: #18d26e;
+    letter-spacing: 1px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.about-container strong {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.about-container ul li {
+    padding-top: 1.5rem;
+}
+
+.about-container ul li strong {
+    letter-spacing: 0.7px;
+}
+
+.skill-text {
+    color: #aaaaaa;
+    font-size: 1.25rem;
+    letter-spacing: 0.6px;
+}
+
+.chiziq_3 {
+    position: relative;
+    left: 4rem;
+    top: 1.3rem;
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background-color: red;
+}
+
+/* / about  */
+
+/* portfolio */
+.manzil-portfolio {
+    position: relative;
+    bottom: 3.8rem;
+}
+
+.portfolio {
+    width: 100%;
+    background-color: #003049;
+}
+
+.portfolioContainer {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0px auto;
+    padding: 30px 8%;
+}
+
+.title {
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 0px 0px 20px 0px;
+}
+
+.title h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.btns {
+    padding: 20px 0px 25px;
+}
+
+section.btns ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+section.btns ul li {
+    display: inline-block;
+    padding: 3px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 4px 10px;
+    cursor: pointer;
+    transition: color 0.4s;
+    border: none;
+}
+
+section.btns ul li:hover {
+    color: dodgerblue;
+}
+
+section.btns ul li.active {
+    position: relative;
+    color: dodgerblue;
+}
+
+section.btns ul li.active::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: dodgerblue;
+    animation: animate 0.4s linear;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+section.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+section.gallery .card {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+section.gallery .card.hide {
+    display: none;
+}
+
+section.gallery .card.active {
+    display: block;
+    animation: animateTwo 0.6s;
+}
+
+@keyframes animateTwo {
+    from {
+        transform: scale(0.6);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s;
+}
+
+.card:hover .imgBox img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.card .imgText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgText h2,
+.imgText p {
+    padding: 20px 10%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s linear,
+        padding 0.3s linear;
+}
+
+.card:hover .imgText h2,
+.card:hover .imgText p {
+    opacity: 1;
+    padding: 8px 10%;
+}
+
+/* / portfolio */
+
+/* conatact us  */
+.manzil-contact {
+    position: relative;
+    top: -2.8rem;
+}
+
+.contact-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #2c2f48;
+}
+
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #363953;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #2c2f48;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    background: #00dbde;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-form .send-button:hover {
+    background: hsl(181, 100%, 44%, 0.8);
+    transition: 0.3s all linear;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* / contact us  */
+
+/* footer  */
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    /* border-top-left-radius: 125px; */
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.qator {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.qator-col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.qator-col img {
+    width: 8rem;
+}
+
+.qator-col:nth-child(2),
+.qator-col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.qator-col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.footer-form .bi-envelope {
+    margin-right: 10px;
+}
+
+.footer-form .footer-input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.footer-form .footer-btn {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.social-icons .bi {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center !important;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    padding: 10px 13px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.social-icons .bi:hover {
+    color: white;
+    background-image: linear-gradient(to right, red, blue);
+}
+
+.underline {
+    margin-top: 1rem;
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    from {
+        left: -20px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* / footer  */
+
+@media only screen and (max-width: 1600px) {
+    .name {
+        font-size: 6rem;
+    }
+
+    .img-fluid {
+        width: 555px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .name {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+
+    .name {
+        font-size: 4rem !important;
+    }
+
+    .name {
+        font-size: 5.3rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .my-project-container .card {
+        width: 17rem;
+    }
+
+
+    .my-project-container .card img {
+        width: 17rem;
+        padding: 1rem 1.7rem;
+    }
+
+
+    .my-project-container .card .card-title {
+        font-size: 1.5rem;
+    }
+
+    .my-project-container .card .card-text {
+        font-size: 0.8rem;
+    }
+
+
+    .card .btn {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .chiziq_1 {
+        left: 8rem;
+        top: 2.5rem;
+        width: 120px;
+    }
+
+    .chiziq_2 {
+        width: 120px;
+    }
+
+    .project-text h2 {
+        font-size: 2.5rem;
+        padding: 0 1.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .img-fluid {
+        width: 500px;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .work {
+        font-size: 2.5rem;
+    }
+
+    .btn-resume {
+        margin-top: 5rem;
+        padding: 10px 20px;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .name {
+        font-size: 3.5rem !important;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    .my-project-container .card {
+        width: 13rem;
+    }
+
+
+    .my-project-container .card img {
+        width: 13rem;
+        padding: 1rem 2.2rem;
+    }
+
+
+    .my-project-container .card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .my-project-container .card .card-text {
+        font-size: 0.8rem;
+    }
+
+    .card .btn {
+        padding: 0.3rem 1rem;
+    }
+
+
+    .my-project-text1 {
+        display: block;
+    }
+
+    .my-project-text2 {
+        display: none;
+    }
+
+    .chiziq_1 {
+        left: 8rem;
+        top: 5.5rem;
+    }
+
+    .about-image {
+        height: 250px !important;
+    }
+
+    .about-image2 {
+        display: block;
+    }
+
+    .manzil {
+        position: relative;
+        bottom: 3.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 964px) {
+    .contact-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .img-fluid {
+        width: 350px;
+        height: 380px;
+    }
+
+    .name {
+        font-size: 2.8rem !important;
+    }
+
+    .work {
+        font-size: 1.8rem;
+    }
+
+    .btn-resume {
+        margin-top: 3rem;
+        padding: 8px 15px;
+        letter-spacing: 3px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .img-fluid {
+        width: 500px;
+        height: 550px;
+    }
+
+    .project-text {
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .texts {
+        padding: 0;
+    }
+
+    .name {
+        font-size: 3rem;
+        text-align: center !important;
+    }
+
+    .work {
+        font-size: 1.8rem;
+    }
+
+    .btn-resume {
+        margin-top: 3rem;
+        padding: 8px 15px;
+        letter-spacing: 3px;
+        font-size: 17px;
+    }
+
+    .my-project-container .card {
+        margin: 1rem;
+        width: 22rem;
+    }
+
+    .my-project-container .card img {
+        width: 22rem;
+        padding: 1rem 2.2rem;
+    }
+
+    .card .btn {
+        padding: 0.3rem 1rem;
+    }
+
+
+    .chiziq_1 {
+        left: 12.3rem;
+        top: 4.2rem;
+    }
+
+    .about-image {
+        height: 400px !important;
+        width: 400px !important;
+    }
+
+
+    .skill-col {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 20rem !important;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+
+    .contact-container {
+        margin-top: -1rem !important;
+    }
+
+    .footer-form {
+        bottom: unset;
+    }
+
+    .qator-col {
+        flex-basis: 100%;
+    }
+
+    .qator-col:nth-child(2),
+    .qator-col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header.title {
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .img-fluid {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-chiziq {
+        color: #3772ff !important;
+    }
+
+    .texts span {
+        color: #00bbf9;
+    }
+
+    .my-project-container .card {
+        margin-left: 4.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .my-project-container .card {
+        margin-left: 2.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .my-project-container .card {
+        margin-left: 0.8rem;
+    }
+
+    .about-image {
+        height: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .my-project-container .card {
+        margin-left: -0.8rem;
+    }
+
+    .chiziq_1 {
+        left: 8rem;
+        top: 4.2rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .my-project-container .card {
+        margin-left: -1rem;
+        width: 20rem;
+    }
+
+    .my-project-container .card img {
+        width: 20rem;
+    }
+
+    .card .btn {
+        padding: 0.3rem 1rem;
+    }
+}

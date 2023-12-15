@@ -1,0 +1,322 @@
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.chetidagi_quti {
+    position: relative;
+    background-color: #F5F6FA;
+    width: 320px;
+    height: 1349px;
+}
+.logo {
+    position: absolute;
+    width: 158.39px;
+    height: 36px;
+    top: 72px;
+    left: 74px;
+}
+.button_1 {
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    top: 216px;
+    left: 38px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #1F64FF;
+    color: #FFFFFF;
+    line-height: 19.2px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1;
+}
+.button_1:hover {
+    background-color: red;
+}
+.rasm_1 {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 306px;
+    left: 88px;
+}
+.rasm_2 {
+    position: absolute;
+    width: 117px;
+    height: 20px;
+    top: 372px;
+    left: 88px;
+}
+.rasm_3 {
+    position: absolute;
+    width: 134px;
+    height: 19px;
+    top: 438px;
+    left: 88px;
+}
+.rasm_4 {
+    position: absolute;
+    width: 102px;
+    height: 20px;
+    top: 503px;
+    left: 88px;
+}
+.one_img {
+    position: absolute;
+    width: 231.4px;
+    height: 210.38px;
+    top: 760px;
+    left: 44px;
+}
+.button_2 {
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    top: 1007.38px;
+    left: 45px;
+    border-radius: 10px;
+    background-color: #1F64FF;
+    color: #FFFFFF;
+    border-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    cursor: pointer;
+}
+.button_2:hover {
+    background-color: red;
+}
+.input {
+
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 4px;
+    font-size: 16px;
+}
+label {
+    /* Stil berishingiz mumkin */
+    font-weight: bold;
+}
+  
+  input[type="text"] {
+    /* Stil berishingiz mumkin */
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    width: 480px;
+    height: 30px;
+    bottom: 1290px;
+    font-size: 20px;
+}
+.input {
+    position: relative;
+    left: 420px;;
+}
+.img_1 img {
+    position: relative;
+    width: 230px;
+    height: 45px;
+    left: 1000px;
+    bottom: 1335px;
+    border-radius: 10px;
+}
+.img_2 img {
+    position: relative;
+    width: 21px;
+    height: 23px;
+    left: 1365px;
+    bottom: 1375px;
+    border-radius: 10px;    
+    border: 2px;
+}
+.img_3 img {
+    position: relative;
+    width: 80px;
+    height: 70px;
+    left: 1400px;
+    bottom: 1422px;
+    border-radius: 10px;
+    border: 2px;
+}
+.main_header_brand img {
+    position: relative;
+    width: 150px;
+}
+
+.main_header_brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main_header_brand a {
+    position: relative;
+    top: 63px;
+    left: 180px;
+}
+
+.main_navigation {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: 56px;
+    left: 376px;
+}
+
+.main-navigation_item   {
+    position: relative;
+    display: inline-block;
+    padding: 40px;
+}
+
+.main-navigation_item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-navigation_item a:hover {
+    color: #efb6df;
+}
+.opacity {
+    color: #AAB2C8;
+}
+.opacity2 {
+    color: black;
+}
+.opacity3 {
+    color: #AAB2C8;
+}
+.h1_menu h1 {
+    position: absolute;
+    left: 420px;
+}
+.h1_menu {
+    position: relative;
+    bottom: 1400px;
+}
+.chiziq {
+    position: relative;
+    left: 439px;
+    top: 30px;
+    width: 894.5px;
+    height: 2px;
+    background-color: #F5F6FA;
+}
+.ichki_chiziq {
+    position: absolute;
+    left: 159px;
+    width: 130px;
+    height: 4px;
+    background-color: #1F64FF;
+}
+.quti_1 {
+    position: relative;
+    width: 950px;
+    height: 110px;
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    left: 420px;
+    top: 80px;
+}
+.setting {
+    position: absolute;
+    left: 930px;
+    top: 10px;
+}
+.toggle {
+    position: absolute;
+    left: 855px;
+    top: 52px;
+    cursor: pointer;
+}
+.rating {
+    position: absolute;
+    left: 725px;
+    top: 38px;
+}
+.vector1 {
+    position: absolute;
+    width: 27.43px;
+    height: 24px;
+    left: 600px;
+    top: 42px;
+}
+.vector {
+    position: absolute;
+    left: 470px;
+    top: 42px;
+}
+.fav {
+    position: absolute;
+    left: 30px;
+    top: 42px;
+}
+.ready {
+    position: absolute;
+    left: 300px;
+    top: 34px;
+}
+.quti_1 h1 {
+    font-size: 20px;
+    color: #000022;
+    left: 80px;
+    top: 18px;
+}
+.quti_1 h3 {
+    position: absolute;
+    color: #AAB2C8;
+    left: 80px;
+    top: 43px;
+}
+.quti_2 {
+    position: relative;
+    width: 950px;
+    height: 110px;
+    background-color: #E1E2E9;
+    border-radius: 10px;
+    left: 420px;
+    top: 100px;
+}
+.draft {
+    left: 280px;
+}
+.quti_2 h1 {
+    font-size: 20px;
+    color: #000022;
+    left: 80px;
+    top: 18px;
+}
+.quti_2 h3 {
+    position: absolute;
+    color: #AAB2C8;
+    left: 80px;
+    top: 43px;
+}
+.quti_3 {
+    position: relative;
+    width: 950px;
+    height: 110px;
+    background-color: #E1E2E9;
+    border-radius: 10px;
+    left: 420px;
+    top: 120px;
+}
+.quti_3 h1 {
+    font-size: 20px;
+    color: #000022;
+    left: 80px;
+    top: 18px;
+}
+.quti_3 h3 {
+    position: absolute;
+    color: #AAB2C8;
+    left: 80px;
+    top: 43px;
+}
+
+
