@@ -30,27 +30,27 @@ let portfolio = document.querySelector('.portfolio');
 let contactUs = document.querySelector('.contact-body');
 
 // home 
-document.querySelector('#color-home').addEventListener('input', function() {
+document.querySelector('#color-home').addEventListener('input', function () {
     home.style.backgroundColor = document.querySelector('#color-home').value;
 })
 
 // about
-document.querySelector('#color-about').addEventListener('input', function() {
+document.querySelector('#color-about').addEventListener('input', function () {
     about.style.backgroundColor = document.querySelector('#color-about').value;
 })
 
 // my project
-document.querySelector('#color-project').addEventListener('input', function() {
+document.querySelector('#color-project').addEventListener('input', function () {
     myProject.style.background = document.querySelector('#color-project').value;
 })
 
 // portfolio
-document.querySelector('#color-portfolio').addEventListener('input', function() {
+document.querySelector('#color-portfolio').addEventListener('input', function () {
     portfolio.style.backgroundColor = document.querySelector('#color-portfolio').value;
 })
 
 // contact US 
-document.querySelector('#color-contact').addEventListener('input', function() {
+document.querySelector('#color-contact').addEventListener('input', function () {
     contactUs.style.background = document.querySelector('#color-contact').value;
 })
 
@@ -66,3 +66,13 @@ const clearAll = () => {
     document.querySelector('#color-portfolio').value = '';
     document.querySelector('#color-contact').value = '';
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Saytingiz yuklandi
+    var preloader = document.querySelector(".loader");
+    
+    // 3 sekunddan so'ng "preloader"ni yashirish
+    setTimeout(function() {
+        preloader.style.display = "none";
+    }, 1200);
+});

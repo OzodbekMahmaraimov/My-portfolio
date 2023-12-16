@@ -40,6 +40,54 @@ body {
 
 /* / all style  */
 
+/* loading */
+.loader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+
+.spinner {
+    position: relative;
+}
+
+.spinner::before,
+.spinner::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.spinner::before {
+    width: 15.7px;
+    height: 15.7px;
+    background: #474bff;
+}
+
+.spinner::after {
+    width: 56px;
+    height: 56px;
+    animation: spinner-y7ej37 1s infinite linear;
+    border: 11.2px solid #474bff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+@keyframes spinner-y7ej37 {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* / loading */
+
 /* navbar  */
 
 header {
