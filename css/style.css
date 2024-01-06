@@ -298,7 +298,7 @@ header {
 /* / home  */
 
 /* my project  */
-
+/* 
 .manzil-project {
     position: relative;
     top: -3rem;
@@ -386,7 +386,7 @@ header {
 .btn .my-project-container .card img {
     width: 20rem;
     padding: 1rem 1.7rem;
-}
+} */
 
 /* / my project  */
 
@@ -624,10 +624,27 @@ section.gallery .card.active {
         padding 0.3s linear;
 }
 
+.imgText .btn {
+    opacity: 0;
+    transition: opacity 0.3s linear,
+        padding 0.3s linear;
+    background-color: red;
+    color: #ffffff;
+}
+
+.imgText .btn:active {
+    background-color: red;
+    color: #ffffff;
+}
+
 .card:hover .imgText h2,
 .card:hover .imgText p {
     opacity: 1;
     padding: 8px 10%;
+}
+
+.card:hover .imgText .btn {
+    opacity: 1;
 }
 
 /* / portfolio */
@@ -954,7 +971,6 @@ ul li a {
     }
 
     .btn-resume {
-        margin-top: 5rem;
         padding: 10px 20px;
         letter-spacing: 3px;
         font-size: 20px;
@@ -1077,10 +1093,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 850px) {
-    .img-fluid {
-        width: 350px;
-        height: 380px;
-    }
 
     .name {
         font-size: 2.8rem !important;
@@ -1091,7 +1103,7 @@ ul li a {
     }
 
     .btn-resume {
-        margin-top: 3rem;
+        margin-top: -7rem !important;
         padding: 8px 15px;
         letter-spacing: 3px;
         font-size: 17px;
@@ -1099,10 +1111,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 767px) {
-    .img-fluid {
-        width: 500px;
-        height: 550px;
-    }
 
     .project-text {
         text-align: center;
@@ -1126,7 +1134,7 @@ ul li a {
     }
 
     .btn-resume {
-        margin-top: 3rem;
+        margin-top: 0.3rem !important;
         padding: 8px 15px;
         letter-spacing: 3px;
         font-size: 17px;
@@ -1203,10 +1211,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 576px) {
-    .img-fluid {
-        width: 400px;
-        height: 400px;
-    }
 
     .text-chiziq {
         color: #3772ff !important;
@@ -1234,7 +1238,7 @@ ul li a {
     }
 
     .about-image {
-        height: 300px !important;
+        height: 350px !important;
     }
 }
 
