@@ -68,15 +68,13 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#color-contact').value = '';
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
         // Saytingiz yuklandi
-        var preloader = document.querySelector(".loader");
+        let preloader = document.querySelector(".loader");
 
         // 3 sekunddan so'ng "preloader"ni yashirish
         setTimeout(function () {
             preloader.style.display = "none";
         }, 1200);
-    });
 
     setTimeout(function () {
         let homeImg = document.querySelector('.home_rasm-col');
