@@ -141,7 +141,7 @@ header {
 
 /* home  */
 .one-page {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #003049;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -162,7 +162,7 @@ header {
 }
 
 .home_rasm-col img {
-    height: 92%;
+    width: 60%;
 }
 
 /* .home-row {
