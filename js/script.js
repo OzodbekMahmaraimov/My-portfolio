@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
     navBar.classList.toggle("active");
   };
 
+  const backToTopBtn = document.getElementById("backToTopBtn");
   window.addEventListener("scroll", () => {
-    const backToTopBtn = document.getElementById("backToTopBtn");
     if (window.scrollY > 150 && backToTopBtn) {
       backToTopBtn.classList.add("show");
       backToTopBtn.classList.remove("hide");
@@ -19,9 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  function scrollToTop() {
+  backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  })
   // colors
   let home = document.querySelector(".one-page");
   let about = document.querySelector(".about-container");
@@ -64,6 +64,10 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   document.getElementById("clearAll").addEventListener("click", () => {
+    clearAll();
+  });
+
+  function clearAll() {
     home.style.backgroundColor = "#003049";
     about.style.backgroundColor = "#040404";
     myProject.style.background = "linear-gradient(45deg, #08001f, #30197d)";
@@ -74,7 +78,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#color-project").value = "";
     document.querySelector("#color-portfolio").value = "";
     document.querySelector("#color-contact").value = "";
-  });
+  }
 
   // Saytingiz yuklandi
   let preloader = document.querySelector(".loader");
